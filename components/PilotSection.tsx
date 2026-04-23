@@ -20,7 +20,7 @@ export function PilotSection() {
               See HUB360 on your stack.
             </h2>
             <p className="mt-4 text-sm text-hub-ink/50 dark:text-white/50">
-              Fortune 50 design partners only for now—tell us where you are in rollout.
+              Fortune 50 design partners only for now-tell us where you are in rollout.
             </p>
           </motion.div>
           <motion.form

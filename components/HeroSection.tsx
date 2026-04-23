@@ -61,7 +61,7 @@ export function HeroSection() {
               </a>
             </motion.div>
             <p className="mt-8 text-center text-xs font-medium tracking-wide text-white/40 lg:text-left">
-              Preview UI for storytelling—pilot builds may differ.
+              Preview UI for storytelling-pilot builds may differ.
             </p>
           </div>
           <div className="flex justify-center lg:justify-end">

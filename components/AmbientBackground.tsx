@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 
-/** Slow drifting layers — open-SaaS–style ambient motion without cluttering copy. */
+/** Slow drifting layers - open-SaaS–style ambient motion without cluttering copy. */
 export function AmbientBackground() {
   return (
     <div

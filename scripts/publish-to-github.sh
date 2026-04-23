@@ -26,7 +26,7 @@ else
   echo "Creating public repository ${LOGIN}/hub360-website ..."
   gh repo create hub360-website \
     --public \
-    --description "HUB360 marketing site — Sunshine Act / Open Payments meal compliance"
+    --description "HUB360 marketing site - Sunshine Act / Open Payments meal compliance"
 fi
 
 git push -u origin main

@@ -8,7 +8,7 @@ type PhoneMockupProps = {
 };
 
 /**
- * Device frame without a separate “notch island” band — screen fills the rounded glass,
+ * Device frame without a separate “notch island” band - screen fills the rounded glass,
  * status row sits on the same surface (cleaner marketing mock).
  */
 export function PhoneMockup({ variant = "default" }: PhoneMockupProps) {
@@ -31,8 +31,8 @@ export function PhoneMockup({ variant = "default" }: PhoneMockupProps) {
         className={`pointer-events-none absolute -inset-6 rounded-[3.25rem] blur-3xl transition duration-700 ${glow}`}
       />
       <div className={`relative flex h-full w-full flex-col ${frame}`}>
-        {/* Single glass screen — no black top cap, no Dynamic Island pill */}
-        {/* Screen follows site dark mode — onDark only affects chrome/glow on the ink hero */}
+        {/* Single glass screen - no black top cap, no Dynamic Island pill */}
+        {/* Screen follows site dark mode - onDark only affects chrome/glow on the ink hero */}
         <div
           className={`flex min-h-0 flex-1 flex-col overflow-hidden rounded-[2.65rem] bg-white text-hub-ink shadow-inner ring-1 ring-black/[0.06] dark:bg-[#0c1118] dark:text-white dark:ring-white/10 ${
             onDark ? "dark:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.06)]" : ""

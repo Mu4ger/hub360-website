@@ -11,9 +11,9 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "HUB360 — Sunshine Act compliance, quietly handled",
+  title: "HUB360 - Sunshine Act compliance, quietly handled",
   description:
-    "Order meals, enforce limits, and keep Open Payments evidence structured—without the spreadsheet tax.",
+    "Order meals, enforce limits, and keep Open Payments evidence structured-without the spreadsheet tax.",
 };
 
 export default function RootLayout({

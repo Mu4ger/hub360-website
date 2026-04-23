@@ -21,7 +21,7 @@ function mean(nums: number[]) {
   return nums.reduce((a, b) => a + b, 0) / nums.length;
 }
 
-/** Albers USA — taller canvas + moderate scale so AK/HI insets stay inside the view (no ZoomableGroup: it crashes with this projection in react-simple-maps v3). */
+/** Albers USA - taller canvas + moderate scale so AK/HI insets stay inside the view (no ZoomableGroup: it crashes with this projection in react-simple-maps v3). */
 const MAP_W = 975;
 const MAP_H = 680;
 
@@ -76,7 +76,7 @@ export function ComplianceVisualizer() {
               Compliance map
             </p>
             <h2 className="mt-3 text-3xl font-semibold tracking-tight text-hub-ink dark:text-white sm:text-4xl">
-              See posture by state—then replace every figure with yours.
+              See posture by state-then replace every figure with yours.
             </h2>
             <p className="mt-4 text-sm leading-relaxed text-hub-ink/50 dark:text-white/50">
               Numbers below are scaffolding only. You will import CMS cuts and internal limits when
@@ -120,7 +120,7 @@ export function ComplianceVisualizer() {
                 <p className="text-[11px] font-semibold uppercase tracking-wide text-hub-ink/45 dark:text-white/45">
                   Placeholder · CMS lens
                 </p>
-                <p className="mt-2 text-2xl font-semibold text-hub-ink dark:text-white">—</p>
+                <p className="mt-2 text-2xl font-semibold text-hub-ink dark:text-white">-</p>
                 <p className="mt-1 text-[11px] text-hub-ink/40 dark:text-white/40">
                   Paste Open Payments totals here
                 </p>
@@ -299,7 +299,7 @@ export function ComplianceVisualizer() {
                   </div>
                 ) : (
                   <p className="mt-4 text-sm leading-relaxed text-hub-ink/50 dark:text-white/50">
-                    Hover the map—or pin a state—to preview the panel your reps will rely on.
+                    Hover the map-or pin a state-to preview the panel your reps will rely on.
                   </p>
                 )}
               </div>

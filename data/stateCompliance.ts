@@ -77,7 +77,7 @@ export function colorForCap(cap: number): string {
   return "#73C7E3";
 }
 
-/** Choropleth for dark map canvas — slightly brighter steps for contrast. */
+/** Choropleth for dark map canvas - slightly brighter steps for contrast. */
 export function colorForCapDark(cap: number): string {
   if (cap <= 96) return "#1a3a52";
   if (cap <= 102) return "#234a68";

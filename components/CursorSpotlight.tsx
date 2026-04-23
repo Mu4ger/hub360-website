@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-/** Radial glow follows cursor — rendered above page, under sticky nav (z-50). */
+/** Radial glow follows cursor - rendered above page, under sticky nav (z-50). */
 export function CursorSpotlight() {
   const [pos, setPos] = useState({ x: 0, y: 0 });
   const [on, setOn] = useState(false);

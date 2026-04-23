@@ -14,7 +14,7 @@ export function IntegrationsBand() {
     <section className="border-y border-hub-ink/[0.06] bg-white/70 px-5 py-16 backdrop-blur-sm dark:border-white/10 dark:bg-white/[0.04] sm:px-8">
       <div className="mx-auto flex w-full max-w-content flex-col items-start justify-between gap-8 md:flex-row md:items-center">
         <p className="max-w-xs text-sm text-hub-ink/50 dark:text-white/50">
-          Connect the channels reps already use—starting with catering, expanding to delivery.
+          Connect the channels reps already use-starting with catering, expanding to delivery.
         </p>
         <div className="flex flex-wrap gap-2">
           {items.map((x, i) => (

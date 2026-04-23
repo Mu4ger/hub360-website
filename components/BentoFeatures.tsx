@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const cards = [
   {
     title: "Order in one place",
-    body: "Catering and delivery, unified—less app-hopping, fewer blind spots.",
+    body: "Catering and delivery, unified-less app-hopping, fewer blind spots.",
     span: "lg:col-span-7",
   },
   {
@@ -16,7 +16,7 @@ const cards = [
   },
   {
     title: "Evidence by default",
-    body: "Interactions structured for Open Payments—not reconstructed after the fact.",
+    body: "Interactions structured for Open Payments-not reconstructed after the fact.",
     span: "lg:col-span-4",
   },
   {

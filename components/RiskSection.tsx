@@ -20,7 +20,7 @@ export function RiskSection() {
               Why it matters
             </p>
             <h2 className="mt-4 text-3xl font-semibold tracking-tight text-hub-ink dark:text-white sm:text-4xl lg:text-[2.4rem]">
-              Inaccurate Open Payments data is not a paperwork problem—it is a liability.
+              Inaccurate Open Payments data is not a paperwork problem-it is a liability.
             </h2>
           </motion.div>
           <motion.div
@@ -38,7 +38,7 @@ export function RiskSection() {
             </p>
             <p className="mt-2 text-sm text-hub-ink/55 dark:text-white/55">
               per year for applicable manufacturers that fail to report under federal transparency
-              requirements—alongside reputational damage and audit drag.
+              requirements-alongside reputational damage and audit drag.
             </p>
             <p className="mt-4 text-xs leading-relaxed text-hub-ink/40 dark:text-white/40">
               Source:{" "}

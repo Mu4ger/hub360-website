@@ -1,5 +1,5 @@
 /**
- * Full-page screenshots for docs/ (light + dark).
+ * Hero-section screenshots for docs/ (light + dark).
  * Prerequisite: `npm run dev` so http://127.0.0.1:3000 responds.
  *
  *   SCREENSHOT_URL=http://127.0.0.1:3456 npm run screenshots
@@ -48,13 +48,13 @@ await waitForServer(BASE);
 
 const browser = await chromium.launch();
 const page = await browser.newPage({
-  viewport: { width: 1440, height: 900 },
+  viewport: { width: 1440, height: 760 },
 });
 
 try {
   await page.goto(BASE, { waitUntil: "load", timeout: 120000 });
   await delay(3500);
-  await page.screenshot({ path: join(OUT, "home-light.png"), fullPage: true });
+  await page.screenshot({ path: join(OUT, "home-light.png"), fullPage: false });
   console.log("Wrote home-light.png");
 
   await page.evaluate(() => {
@@ -66,7 +66,7 @@ try {
   });
   await page.reload({ waitUntil: "load", timeout: 120000 });
   await delay(3500);
-  await page.screenshot({ path: join(OUT, "home-dark.png"), fullPage: true });
+  await page.screenshot({ path: join(OUT, "home-dark.png"), fullPage: false });
   console.log("Wrote home-dark.png");
 } finally {
   await browser.close();
