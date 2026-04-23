@@ -77,7 +77,15 @@ SCREENSHOT_URL=http://127.0.0.1:3002 npm run screenshots
 
 ## GitHub
 
-The project is committed on branch **`main`** in a local repository inside this directory. To create the remote repository and push, follow **[docs/GITHUB.md](docs/GITHUB.md)**.
+The project is committed on branch **`main`** in a local repository inside this directory.
+
+After a one-time login (`gh auth login`), publish the repo and push in one step:
+
+```bash
+npm run publish:github
+```
+
+More detail and a manual flow without the script: **[docs/GITHUB.md](docs/GITHUB.md)**.
 
 ## License
 

@@ -2,7 +2,21 @@
 
 This folder is its own Git repository (independent of any Git repo in parent directories).
 
-## Create the repository on GitHub
+## Fast path (GitHub CLI)
+
+1. Install the CLI if needed: `brew install gh`
+2. Log in once (browser or token): `gh auth login`
+3. From the project root:
+
+```bash
+npm run publish:github
+```
+
+The script creates **`hub360-website`** under your logged-in account if it does not exist, points **`origin`** at that repo, and runs **`git push -u origin main`**.
+
+---
+
+## Manual: create the repository on GitHub
 
 1. Sign in at [github.com/new](https://github.com/new).
 2. Repository name: **`hub360-website`** (or your choice).
