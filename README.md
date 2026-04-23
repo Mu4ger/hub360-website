@@ -75,6 +75,10 @@ SCREENSHOT_URL=http://127.0.0.1:3002 npm run screenshots
 - [next-themes](https://github.com/pacocoursey/next-themes)
 - [react-simple-maps](https://www.react-simple-maps.io/) + [us-atlas](https://github.com/topojson/us-atlas)
 
+## GitHub
+
+The project is committed on branch **`main`** in a local repository inside this directory. To create the remote repository and push, follow **[docs/GITHUB.md](docs/GITHUB.md)**.
+
 ## License
 
 Private / all rights reserved unless otherwise specified by the project owner.
