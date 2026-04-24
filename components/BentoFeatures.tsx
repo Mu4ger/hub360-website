@@ -33,7 +33,7 @@ const cards = [
 
 export function BentoFeatures() {
   return (
-    <section id="platform" className="scroll-mt-28 px-5 py-24 sm:px-8">
+    <section id="platform" className="scroll-mt-28 px-5 py-20 sm:px-8 sm:py-22">
       <div className="mx-auto w-full max-w-content">
         <motion.div
           initial={{ opacity: 0, y: 12 }}
@@ -45,11 +45,11 @@ export function BentoFeatures() {
           <p className="text-xs font-semibold uppercase tracking-[0.26em] text-hub-ink/40 dark:text-white/40">
             Platform
           </p>
-          <h2 className="mt-3 text-3xl font-semibold tracking-tight text-hub-ink dark:text-white sm:text-4xl">
+          <h2 className="mt-3 text-[clamp(2rem,3.8vw,3.1rem)] font-semibold tracking-[-0.03em] text-hub-ink dark:text-white">
             Built for the moment spend happens.
           </h2>
         </motion.div>
-        <div className="mt-14 grid gap-4 lg:grid-cols-12">
+        <div className="mt-10 grid gap-4 lg:grid-cols-12">
           {cards.map((c, i) => (
             <motion.article
               key={c.title}

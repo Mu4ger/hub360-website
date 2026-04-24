@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans } from "next/font/google";
+import { Poppins } from "next/font/google";
 import { Providers } from "@/components/providers/Providers";
 import "./globals.css";
 
-const plusJakarta = Plus_Jakarta_Sans({
+const poppins = Poppins({
   subsets: ["latin"],
   variable: "--font-sans",
   weight: ["400", "500", "600", "700", "800"],
@@ -25,7 +25,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         suppressHydrationWarning
-        className={`${plusJakarta.variable} font-sans bg-hub-cream text-hub-ink antialiased transition-colors duration-300 dark:bg-[#0b0f14] dark:text-[#e8eef6]`}
+        className={`${poppins.variable} font-sans bg-hub-cream text-hub-ink antialiased transition-colors duration-300 dark:bg-[#0b0f14] dark:text-[#e8eef6]`}
       >
         <Providers>{children}</Providers>
       </body>

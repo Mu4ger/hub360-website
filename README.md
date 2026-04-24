@@ -10,7 +10,7 @@ Marketing site for **HUB360** - Sunshine Act and CMS Open Payments-aware meal or
 
 - **Letters-style hero** on brand ink (`#2E4A70`) with tight typography, strong subcopy, and an iPhone product mockup (light/dark aware).
 - **Compliance visualizer** with `react-simple-maps`, state-level data, and projection tuned for the lower 48.
-- **Light / dark theme** via `next-themes` (`hub360-theme` storage key), ambient background, and optional cursor spotlight.
+- **Light / dark theme** via `next-themes` (`hub360-theme` storage key), ambient background, and optional mouse spotlight glow.
 - **Palette**: ink `#2E4A70`, accent `#73C7E3`, cream `#FFF9F0`, mist `#F0F2F2`.
 
 Data policy: this repository uses synthetic and public data only. No real client data is included.

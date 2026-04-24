@@ -6,7 +6,7 @@ export function RiskSection() {
   return (
     <section
       id="why"
-      className="scroll-mt-28 border-y border-hub-ink/[0.06] bg-gradient-to-b from-white to-hub-mist/40 px-5 py-24 dark:border-white/10 dark:from-[#0f141c] dark:to-[#0b0f14] sm:px-8"
+      className="scroll-mt-28 border-y border-hub-ink/[0.06] bg-gradient-to-b from-white to-hub-mist/40 px-5 py-20 dark:border-white/10 dark:from-[#0f141c] dark:to-[#0b0f14] sm:px-8 sm:py-22"
     >
       <div className="mx-auto w-full max-w-content">
         <div className="grid gap-12 lg:grid-cols-2 lg:items-end lg:gap-20">
@@ -19,7 +19,7 @@ export function RiskSection() {
             <p className="text-xs font-semibold uppercase tracking-[0.26em] text-hub-ink/40 dark:text-white/40">
               Why it matters
             </p>
-            <h2 className="mt-4 text-3xl font-semibold tracking-tight text-hub-ink dark:text-white sm:text-4xl lg:text-[2.4rem]">
+            <h2 className="mt-4 text-[clamp(2rem,4vw,3.2rem)] font-semibold tracking-[-0.03em] text-hub-ink dark:text-white">
               Inaccurate Open Payments data is not a paperwork problem-it is a liability.
             </h2>
           </motion.div>

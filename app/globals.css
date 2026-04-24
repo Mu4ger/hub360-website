@@ -49,3 +49,4 @@ html.dark ::selection {
 .focus-ring {
   @apply outline-none ring-2 ring-hub-accent/70 ring-offset-2 ring-offset-hub-cream dark:ring-offset-[#0b0f14];
 }
+

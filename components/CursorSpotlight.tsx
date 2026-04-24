@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-/** Radial glow follows cursor - rendered above page, under sticky nav (z-50). */
+/** Simple circular highlight that follows the pointer. */
 export function CursorSpotlight() {
   const [pos, setPos] = useState({ x: 0, y: 0 });
   const [on, setOn] = useState(false);
@@ -27,11 +27,11 @@ export function CursorSpotlight() {
       aria-hidden
     >
       <div
-        className="absolute h-[480px] w-[480px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-hub-accent/30 opacity-0 blur-[100px] transition-opacity duration-300 dark:bg-hub-accent/20"
+        className="absolute h-[72px] w-[72px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-hub-accent/65 opacity-0 blur-[32px] transition-opacity duration-200 dark:bg-hub-accent/55"
         style={{
           left: pos.x,
           top: pos.y,
-          opacity: on ? 0.45 : 0,
+          opacity: on ? 0.75 : 0,
         }}
       />
     </div>

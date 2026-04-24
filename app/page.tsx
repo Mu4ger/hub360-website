@@ -1,6 +1,8 @@
 import { AmbientBackground } from "@/components/AmbientBackground";
 import { SiteNav } from "@/components/SiteNav";
 import { HeroSection } from "@/components/HeroSection";
+import { ComplianceSimplifiedSection } from "@/components/ComplianceSimplifiedSection";
+import { WhyChooseUsSection } from "@/components/WhyChooseUsSection";
 import { RiskSection } from "@/components/RiskSection";
 import { BentoFeatures } from "@/components/BentoFeatures";
 import { IntegrationsBand } from "@/components/IntegrationsBand";
@@ -15,6 +17,8 @@ export default function Home() {
       <AmbientBackground />
       <SiteNav />
       <HeroSection />
+      <ComplianceSimplifiedSection />
+      <WhyChooseUsSection />
       <RiskSection />
       <BentoFeatures />
       <IntegrationsBand />
