@@ -43,7 +43,7 @@ const cols: FooterCol[] = [
 
 export function SiteFooter() {
   return (
-    <footer className="border-t border-hub-ink/[0.06] bg-white/90 px-5 py-16 backdrop-blur-sm dark:border-white/10 dark:bg-[#0b0f14]/90 sm:px-8">
+    <footer className="w-full border-t border-hub-ink/[0.06] bg-white px-5 py-16 dark:border-white/10 dark:bg-[var(--hub-dark-1)] sm:px-8 lg:px-10 xl:px-12">
       <div className="mx-auto grid w-full max-w-content gap-12 md:grid-cols-2 lg:grid-cols-5">
         <div className="lg:col-span-1">
           <p className="flex items-center gap-2 text-sm font-semibold text-hub-ink dark:text-white">

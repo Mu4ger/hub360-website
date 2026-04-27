@@ -1,13 +1,12 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Work_Sans } from "next/font/google";
 import { Providers } from "@/components/providers/Providers";
 import "./globals.css";
 
-const poppins = Poppins({
+const workSans = Work_Sans({
   subsets: ["latin"],
-  variable: "--font-sans",
-  weight: ["400", "500", "600", "700", "800"],
   display: "swap",
+  variable: "--font-work-sans",
 });
 
 export const metadata: Metadata = {
@@ -25,7 +24,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         suppressHydrationWarning
-        className={`${poppins.variable} font-sans bg-hub-cream text-hub-ink antialiased transition-colors duration-300 dark:bg-[#0b0f14] dark:text-[#e8eef6]`}
+        className={`${workSans.variable} font-sans bg-[#dcecff] text-hub-ink antialiased transition-colors duration-300 dark:bg-[#0b1220] dark:text-[#e8eef6]`}
       >
         <Providers>{children}</Providers>
       </body>

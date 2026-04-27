@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { BentoLettersSlide, SwipeCardCarousel } from "@/components/SwipeCardCarousel";
 
 const pillars = [
   {
@@ -17,9 +18,38 @@ const pillars = [
   },
 ];
 
+const whyChooseReasons = [
+  "Guided workflows that reduce manual reconciliation for reps and compliance teams.",
+  "High-fidelity reporting outputs aligned to Sunshine Act and Open Payments requirements.",
+  "Fast rollout with familiar ordering behavior and stronger audit readiness from day one.",
+];
+
+const combinedSlides = [
+  ...pillars.map((pillar) => ({
+    title: pillar.title,
+    body: pillar.body,
+    group: "Compliance",
+    icon: "compliance",
+  })),
+  ...whyChooseReasons.map((reason) => ({
+    title: "Why choose HUB360",
+    body: reason,
+    group: "Why choose us",
+    icon: "value",
+  })),
+];
+
+function SlideIcon({ type, dark = false }: { type: string; dark?: boolean }) {
+  const cls = dark ? "text-white" : "text-[var(--hub-blue-deep)] dark:text-[#d8ecff]";
+  if (type === "compliance") {
+    return <svg viewBox="0 0 20 20" className={`h-4 w-4 ${cls}`} fill="none"><path d="M10 3l5.6 2.2v4.2c0 3.3-2.2 5.3-5.6 7-3.4-1.7-5.6-3.7-5.6-7V5.2L10 3z" stroke="currentColor" strokeWidth="1.7"/><path d="M7.5 10.2l1.7 1.7 3.3-3.4" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"/></svg>;
+  }
+  return <svg viewBox="0 0 20 20" className={`h-4 w-4 ${cls}`} fill="none"><path d="M3.2 10h13.6M10 3.2v13.6" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round"/><circle cx="10" cy="10" r="6.8" stroke="currentColor" strokeWidth="1.4"/></svg>;
+}
+
 export function ComplianceSimplifiedSection() {
   return (
-    <section className="px-5 py-20 sm:px-8 sm:py-24">
+    <section className="section-y hub-ambient-bg w-full px-5 sm:px-8 lg:px-10 xl:px-12">
       <div className="mx-auto w-full max-w-content">
         <motion.div
           initial={{ opacity: 0, y: 14 }}
@@ -37,25 +67,42 @@ export function ComplianceSimplifiedSection() {
           </p>
         </motion.div>
 
-        <div className="mt-10 grid gap-4 md:grid-cols-3">
-          {pillars.map((pillar, idx) => (
-            <motion.article
-              key={pillar.title}
-              initial={{ opacity: 0, y: 18 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-60px" }}
-              transition={{ duration: 0.45, delay: idx * 0.06 }}
-              className="rounded-3xl border border-hub-ink/[0.08] bg-white p-7 shadow-card dark:border-white/10 dark:bg-[#121a24]"
-            >
-              <h3 className="text-xl font-semibold leading-tight tracking-[-0.01em] text-hub-ink dark:text-white">
-                {pillar.title}
-              </h3>
-              <p className="mt-3 text-[15px] leading-relaxed text-hub-ink/60 dark:text-white/60">
-                {pillar.body}
+        <SwipeCardCarousel
+          lettersStyle
+          fadeFromClass="from-transparent"
+          hint="Swipe horizontally to explore pillars and why teams choose HUB360"
+        >
+          {combinedSlides.map((slide, i) => (
+            <BentoLettersSlide key={`${slide.group}-${i}`} isHighlight={i === 0}>
+              <div
+                className="mb-4 inline-flex h-9 w-9 items-center justify-center"
+              >
+                <SlideIcon type={slide.icon} dark={i === 0} />
+              </div>
+              <p
+                className={`text-xs font-semibold uppercase tracking-[0.2em] ${
+                  i === 0 ? "text-white/70" : "text-hub-ink/45 dark:text-white/45"
+                }`}
+              >
+                {slide.group}
               </p>
-            </motion.article>
+              <h3
+                className={`text-2xl font-semibold leading-tight tracking-[-0.02em] ${
+                  i === 0 ? "text-white" : "text-hub-ink dark:text-white"
+                }`}
+              >
+                {slide.title}
+              </h3>
+              <p
+                className={`mt-4 text-[15px] leading-relaxed ${
+                  i === 0 ? "text-white/90" : "text-hub-ink/65 dark:text-white/65"
+                }`}
+              >
+                {slide.body}
+              </p>
+            </BentoLettersSlide>
           ))}
-        </div>
+        </SwipeCardCarousel>
       </div>
     </section>
   );

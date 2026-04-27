@@ -10,8 +10,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        "3xl": "1920px",
+      },
       maxWidth: {
-        content: "min(1280px, calc(100vw - 2.5rem))",
+        content: "min(1560px, calc(100vw - 3rem))",
       },
       colors: {
         hub: {
@@ -22,7 +25,14 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ["var(--font-sans)", "system-ui", "sans-serif"],
+        sans: [
+          "var(--font-work-sans)",
+          "\"Segoe UI\"",
+          "Roboto",
+          "Helvetica",
+          "Arial",
+          "sans-serif",
+        ],
       },
       boxShadow: {
         card: "0 0 0 1px rgba(46, 74, 112, 0.06), 0 18px 40px -28px rgba(46, 74, 112, 0.18)",
