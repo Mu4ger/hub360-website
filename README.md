@@ -2,9 +2,15 @@
 
 Marketing site for **HUB360** - Sunshine Act and CMS Open Payments-aware meal ordering for healthcare teams. Built with Next.js 15, Tailwind CSS, and a compliance-focused narrative (hero, risk story, platform bento, integrations, interactive U.S. map, pilot CTA).
 
-![Home - light theme](docs/screenshots/home-light.png)
+![Risk and bento section](docs/screenshots/risk-and-bento.png)
 
-![Home - dark theme](docs/screenshots/home-dark.png)
+![Bento feature cards](docs/screenshots/bento-features.png)
+
+![Scale strip and pilot CTA](docs/screenshots/scale-and-pilot.png)
+
+![Channels dashboard asset](docs/screenshots/channels-dashboard.png)
+
+![Policy dashboard asset](docs/screenshots/policy-dashboard.png)
 
 ## Highlights
 
@@ -37,7 +43,7 @@ npm run lint
 
 ## Screenshots (regenerate)
 
-Hero-only captures are committed under `docs/screenshots/`. To refresh them after UI changes:
+Current captures are committed under `docs/screenshots/`. To refresh them after UI changes:
 
 1. Install dependencies (includes Playwright).
 2. In one terminal: `npm run dev` (default port **3000**).
